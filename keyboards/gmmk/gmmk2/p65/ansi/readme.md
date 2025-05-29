@@ -14,5 +14,3 @@
 
 3. Flash the firmware by running `qmk flash`.
 
-4. Replug the USB cable.
-
