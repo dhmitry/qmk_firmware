@@ -71,13 +71,25 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     switch (get_highest_layer(state)) {
         case _HM:
             rgb_matrix_mode(RGB_MATRIX_JELLYBEAN_RAINDROPS);
+            rgb_matrix_set_speed(50);
             break;
         case _FL:
             rgb_matrix_mode(RGB_MATRIX_CYCLE_OUT_IN);
+            rgb_matrix_set_speed(70);
             break;
         default:
             rgb_matrix_mode(RGB_MATRIX_CYCLE_LEFT_RIGHT);
+            rgb_matrix_set_speed(30);
             break;
     }
     return state;
+}
+
+
+bool rgb_matrix_indicators_user(void) {
+    if (host_keyboard_led_state().caps_lock) {
+        rgb_matrix_set_color_all(255, 0, 0);
+    }
+
+    return true;
 }
