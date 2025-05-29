@@ -1,23 +1,18 @@
 # GMMK V2 65% (ANSI)
 
-A keyboard made and sold by Glorious LLC. Equipped with the WestBerry G7 ARM Cortex-M4 microcontroller
+## Prerequisites
 
-* Keyboard Maintainer: [GloriousThrall](https://github.com/GloriousThrall)
-* Hardware Supported: GMMK V2
-* Hardware Availability: [GloriousPCGaming.com](https://www.pcgamingrace.com)
+1. Go through the [official guide](https://docs.qmk.fm/newbs_getting_started) to set up QMK.
 
-Make example for this keyboard (after setting up your build environment):
+2. This [tool](https://github.com/WestberryTech/wb32-dfu-updater/tree/master) needs to be set up before flashing.
 
-    make gmmk/gmmk2/p65/ansi:default
+## Flashing
 
-Flashing example for this keyboard:
+1. Build the firmware by running `qmk compile`.
 
-    make gmmk/gmmk2/p65/ansi:default:flash
+2. Put the keyboard into Bootloader mode by holding 'spacebar' and 'b' while plugging in the USB cable.
 
-To reset the board into bootloader mode, do one of the following:
+3. Flash the firmware by running `qmk flash`.
 
-* Hold the Reset switch mounted on the surface of the PCB while connecting the USB cable (remove the spacebar key and press and hold the pin on the right side)
-* Hold the Escape key while connecting the USB cable (also erases persistent settings)
-* Fn+Backslash will reset the board to bootloader mode if you have flashed the default QMK keymap
+4. Replug the USB cable.
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
