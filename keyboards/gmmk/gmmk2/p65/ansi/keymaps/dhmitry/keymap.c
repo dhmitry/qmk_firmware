@@ -24,7 +24,7 @@
 #define HOME_J    RSFT_T(KC_J)
 #define HOME_K    RCTL_T(KC_K)
 #define HOME_L    LALT_T(KC_L)
-#define HOME_SCLN RGUI_T(KC_SCLN)
+#define HOME_SCLN LGUI_T(KC_SCLN)
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
