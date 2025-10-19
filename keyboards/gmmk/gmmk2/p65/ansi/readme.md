@@ -10,7 +10,7 @@
 
 1. Build the firmware by running `qmk compile`.
 
-2. Put the keyboard into Bootloader mode by holding 'spacebar' and 'b' while plugging in the USB cable.
+2. Put the keyboard into Bootloader mode by holding 'Esc' while plugging in the USB cable.
 
 3. Flash the firmware by running `qmk flash`.
 
